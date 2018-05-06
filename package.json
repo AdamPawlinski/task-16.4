@@ -1,0 +1,17 @@
+{
+  "name": "task-16.3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "webpack": "^4.7.0",
+    "webpack-cli": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "author": "Adam Pawliński",
+  "license": "ISC"
+}
