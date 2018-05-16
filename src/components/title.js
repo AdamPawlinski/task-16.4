@@ -1,12 +1,13 @@
 import React from 'react';
+import style from '../styles/title.css';
 
-class Title extends React.Component {
-  render: function() {
+const Title = props => {
     return (
-      <h2>To Do list</h2>
-      <span>There is {} tasks on your list</span>
-    )
-  }
-}
+      <div className={style.title}>
+        <h2>To Do list</h2>
+        <span>There are {props.state.data.length} tasks on your list</span>
+      </div>
+    );
+};
 
 export default Title;
