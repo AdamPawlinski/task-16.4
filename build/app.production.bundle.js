@@ -832,7 +832,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "._2qO66r2cESJqbNPn8hToGy {\r\n  background-color: #222;\r\n  color: #F5F5F5;\r\n  font-size: 24px;\r\n  display: flex;\r\n  justify-content: center;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  width: 60vw;\r\n  margin-top: 20vw;\r\n}\r\n", ""]);
+exports.push([module.i, "._2qO66r2cESJqbNPn8hToGy {\r\n  background-color: #222;\r\n  color: #F5F5F5;\r\n  font-size: 24px;\r\n  display: flex;\r\n  justify-content: center;\r\n  flex-direction: column;;\r\n  align-items: center;\r\n  width: 60vw;\r\n}\r\n\r\n._2qO66r2cESJqbNPn8hToGy span {\r\n  font-size: 18px;\r\n}\r\n", ""]);
 
 // exports
 exports.locals = {
@@ -897,8 +897,8 @@ var Title = function Title(props) {
     _react2.default.createElement(
       'span',
       null,
-      'There are ',
-      props.state.data.length,
+      'There are still: ',
+      props.data,
       ' tasks on your list'
     )
   );
@@ -1010,7 +1010,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "._2TsUI2tj4v7_WHuj0R7x7 {\r\n    background-color: #F5F5F5;\r\n    color: #222;\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    margin: 10vh auto;\r\n    width: 80vw;\r\n    min-height: 80vh;\r\n}\r\n", ""]);
+exports.push([module.i, "._2TsUI2tj4v7_WHuj0R7x7 {\r\n    background-color: #F5F5F5;\r\n    color: #222;\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    margin: 10vh auto;\r\n    width: 80vw;\r\n}\r\n", ""]);
 
 // exports
 exports.locals = {
@@ -1286,7 +1286,7 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: _app2.default.todoApp },
-        _react2.default.createElement(_title2.default, null)
+        _react2.default.createElement(_title2.default, { dataList: this.state.data })
       );
     }
   }]);

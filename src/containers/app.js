@@ -25,16 +25,10 @@ class App extends React.Component {
     this.setState({data: remainder});
   }
 
-  let toDoData = this.state.data => {
-    this.setState({
-      data
-    });
-  }
-
   render() {
     return (
       <div className={style.todoApp}>
-        <Title dataList={this.toDoData}/>
+        <Title dataList={this.state.data}/>
       </div>
     )
   }
