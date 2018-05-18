@@ -36,15 +36,10 @@ class App extends React.Component {
     this.setState({data: remainder});
   }
 
-  dataLength() {
-    let dataLength = this.state.data.length;
-    return dataLength;
-  }
-
   render() {
     return (
       <div className={style.todoApp}>
-        <Title dataList={this.dataLength}/>
+        <Title dataList={this.state.data.length}/>
       </div>
     )
   }
