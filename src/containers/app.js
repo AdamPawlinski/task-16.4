@@ -7,7 +7,18 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      data: []
+      data: [
+        {
+        id: 1,
+            text: 'clean room'
+        }, {
+        id: 2,
+            text: 'wash the dishes'
+        }, {
+        id: 3,
+            text: 'feed my cat'
+        }
+      ]
     };
   }
 
@@ -25,10 +36,15 @@ class App extends React.Component {
     this.setState({data: remainder});
   }
 
+  dataLength() {
+    let dataLength = this.state.data.length;
+    return dataLength;
+  }
+
   render() {
     return (
       <div className={style.todoApp}>
-        <Title dataList={this.state.data}/>
+        <Title dataList={this.dataLength}/>
       </div>
     )
   }

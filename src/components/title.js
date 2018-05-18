@@ -5,7 +5,7 @@ const Title = props => {
   return (
     <div className={style.title}>
       <h2>To Do list</h2>
-      <span>There are still: {props.data} tasks on your list</span>
+      <span>There are still: {props.dataList} tasks on your list</span>
     </div>
   );
 };
